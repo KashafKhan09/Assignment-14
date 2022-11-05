@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <p>Please open console for further answers</p>
+    <script>
+        // Q1
+        let x = 5;
+        let y = 2;
+        let sumVar = x + y;
+        let divideVar = x / y;
+        let multiplicationVar = x * y;
+        alert('the sum of variable is ' + sumVar + ', the division of variable is ' + divideVar + ', the multiplication of variable is ' + multiplicationVar);
+        
+        // Q2
+        let a = 5;
+        a++;
+        let b = a;
+        console.log(b++);
+        
+        // Q3 
+        let strValue = "Hello";
+        console.log(strValue.charAt(0) > strValue.charAt(1));
+        console.log(strValue.charAt(1) > strValue.charAt(2));
+        console.log(strValue.charAt(2) > strValue.charAt(3));
+        console.log(strValue.charAt(3) > strValue.charAt(4));
+
+        // Q4
+        console.log("Q4");
+        console.log(10 > "5");
+        console.log(2 > true);
+        console.log(1 > false); 
+        console.log(1 > ""); 
+        console.log('' == '0' ); 
+        console.log(1 > " "); 
+        console.log(1 > null);
+        console.log(10 > "a"); 
+        console.log(10 > NaN)
+        console.log(10 > undefined);          
+        console.log(0 == '' );             
+        console.log(a > 5 || b > 5); 
+        console.log(0 == '0');
+        
+        // Q5
+        let str="Hello"
+        let num=100;
+        console.log(str || num);
+    </script>
+
+    <!-- For Task # 1 -->
+    <h1>Task 1</h1>
+    <p id="jspara">This text is for task # 1</p>
+
+    <script>
+        document.getElementById("jspara").style.cssText = 'background-color:yellow; font-size:20px; color: red;';
+    </script>
+
+    <!-- For task # 2 -->
+    <h1>Task 2</h1>
+    <p id="para1" class="allpara">Ths is paragraph</p>  
+    <h1 class="allpara">Web Developemnt Course</h1>
+
+    <script>
+        let allparas = document.querySelectorAll('.allpara');
+        allparas.forEach(allpara => {
+        allpara.style.color = 'red';
+    });
+    </script> 
+
+</body>
+</html>
